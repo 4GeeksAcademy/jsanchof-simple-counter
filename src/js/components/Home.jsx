@@ -9,15 +9,15 @@ const Home = (props) => {
   return (
     <div className="container bg-dark">
       <div className="d-flex flex-row align-items-center justify-content-center">
-        <div className="me-3" >
+        <div className="m-3" >
           <FontAwesomeIcon icon={faClock} className="text-light" size="3x" />
         </div>
         <div className="card bg-dark me-3" size="3x">
           <div className="card-text text-light" >0</div>
         </div>
-        <div className="card text-light me-3">0</div>
-        <div className="card text-light me-3">0</div>
-        <div className="card text-light me-3">0</div>
+        <div className="card text-light m-3">0</div>
+        <div className="card text-light m-3">0</div>
+        <div className="card text-light m-3">0</div>
       </div>
     </div>
   );
