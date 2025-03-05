@@ -7,21 +7,25 @@ import { faClock } from '@fortawesome/free-regular-svg-icons';
 //create your first component
 const Home = (props) => {
   return (
-    <div className="container bg-dark">
+    <div className="container bg-dark ">
       <div className="d-flex flex-row align-items-center justify-content-center">
         <div className="m-3" >
           <FontAwesomeIcon icon={faClock} className="text-light" size="3x" />
         </div>
-        <div className="card bg-dark me-3" size="3x">
-          <div className="card-text text-light" >0</div>
-        </div>
-        <div className="card text-light m-3">0</div>
-        <div className="card text-light m-3">0</div>
-        <div className="card text-light m-3">0</div>
+        <div className="h1 text-light m-3">{props.thousands}</div>
+        <div className="h1 text-light m-3">{props.hundreads}</div>
+        <div className="h1 text-light m-3">{props.tens}</div>
+        <div className="h1 text-light m-3">{props.units}</div>
       </div>
     </div>
   );
 };
 
+Home.proptypes = {
+  units: PropTypes.number,
+  tens: PropTypes.number,
+  hundreds: PropTypes.number,
+  thousands: PropTypes.number
+};
 
 export default Home;
